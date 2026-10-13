@@ -204,3 +204,64 @@ img {
 .footer-links p {
   color: #fff;
 }
+/* En mi experiencia y tomando cursos de udemy aprendí a hacer el responsive de otra manera (en la forma de aplicar las clases). */
+/* Deskop */
+@media (max-width: 1060px) {
+  .navegacion {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu_nav {
+    gap: 4px;
+    font-size: 13px;
+  }
+
+  /* Hago el titolo mas chico para que las fotos no lo aplasten */
+  .banner_grid h1 {
+    font-size: 70px;
+  }
+  /* Para que no quede el contenido pegado en la orilla, utilizo el padding */
+  .seccion_creelo,
+  .seccion_volar {
+    padding: 0 20px;
+  }
+}
+
+/* movil */
+@media (max-width: 480px){
+   .cabecera, .marcas, .navegacion, .menu_nav{
+    flex-direction: column;
+  }
+  .marcas li, .menu_nav li{
+    width: 100%;
+    text-align: center;
+  }
+  .menu_nav li {
+    background-color: #ddd;
+  }
+  .cuenta {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  .navegacion input {
+    width: 100%;
+  }
+  .banner_grid,
+  .banner_volamos {
+    flex-direction: column;
+  }
+  .banner_grid h1 {
+    font-size: 80px; 
+    margin: 60px 0;
+  }
+
+  .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
