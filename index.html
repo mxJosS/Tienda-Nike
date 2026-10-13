@@ -1,33 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T1U2 Jose Espinosa</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- aunque nos dejó los iconos como imagen, opté por usar mejor iconos directamente de fontawesome, ya que es más fácil y rápido de implementar, además de que se ve mejor en la página. -->
-  <script src="https://kit.fontawesome.com/6244811c40.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <!-- Cabecera de la página -->
-    <div class="cabecera ancho">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T1U2 Jose Espinosa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- aunque nos dejó los iconos como imagen, opté por usar mejor iconos directamente de fontawesome, ya que es más fácil y rápido de implementar, además de que se ve mejor en la página. -->
+    <script
+      src="https://kit.fontawesome.com/6244811c40.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- Cabecera de la página -->
+      <div class="cabecera ancho">
         <ul class="marcas">
           <li>Nike</li>
           <li>Nike+</li>
           <li>Jordan</li>
-          <img src="assets/iconojordan.jpg" alt="Icono de Jordan">
+          <img src="assets/iconojordan.jpg" alt="Icono de Jordan" />
         </ul>
         <ul class="cuenta">
           <li><a href="#">Únete o inicia sesión con tu cuenta NikePlus</a></li>
           <li><a href="#">Ayuda</a></li>
-          <li><a href="#" aria-label="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li>
+            <a href="#" aria-label="Carrito"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
         </ul>
-    </div>
-   
-    <!-- Navegacion principal -->
+      </div>
+
+      <!-- Navegacion principal -->
       <nav class="navegacion ancho">
-        <a href="#"><img class="logo" src="assets/logo.jpg" alt="Logo de la tienda"></a>
+        <a href="#"
+          ><img class="logo" src="assets/logo.jpg" alt="Logo de la tienda"
+        /></a>
         <ul class="menu_nav">
           <li><a href="#">ROPA DE HOMBRE</a></li>
           <li><a href="#">MUJERES</a></li>
@@ -36,44 +45,91 @@
           <li><a href="#">PERSONALIZAR</a></li>
           <li><a href="#">COLECCIONES</a></li>
         </ul>
-        <input type="search" placeholder="Buscar" aria-label="Buscar productos">
+        <input
+          type="search"
+          placeholder="Buscar"
+          aria-label="Buscar productos"
+        />
       </nav>
-    
-  </header>
+    </header>
 
-  <main>
-    <section class="seccion_creelo ancho margen">
-      <div class="banner_grid">
-        <div class="imagen_izq">
-          <img src="assets/foto1.jpg" alt="imagen de Cristiano Ronaldo">
+    <main>
+      <section class="seccion_creelo ancho">
+        <div class="banner_grid">
+          <div class="imagen_izq">
+            <img src="assets/foto1.jpg" alt="imagen de Cristiano Ronaldo" />
+          </div>
+          <div>
+            <h1>CRÉELO</h1>
+          </div>
+          <div class="imagen_der">
+            <img src="assets/foto2.jpg" alt="imagen de Rashford" />
+          </div>
         </div>
-        <div>
-          <h1>CRÉELO</h1>
+        <div class="info centrar">
+          <h1 class="titulo">CRÉELO</h1>
+          <br />
+          <p class="texto">
+            Obtén el look de la selección nacional del calzado hacia arriba.
+          </p>
+          <a class="btn_negro" href="#">COMPRAR TODO</a>
         </div>
-        <div class="imagen_der">
-          <img src="assets/foto2.jpg" alt="imagen de Rashford">
+      </section>
+
+      <section class="seccion_volar ancho">
+        <div class="banner_volamos">
+          <div class="imagen_izq">
+            <img src="assets/banner1.jpg" alt="Banner Volamos" />
+          </div>
+          <div class="imagen_der">
+            <img src="assets/banner2.jpg" alt="Nike" />
+          </div>
         </div>
+        <br />
+        <div class="info centrar">
+          <h1 class="titulo">DISEÑADO PARA VOLAR</h1>
+          <br />
+          <p class="texto">Cuando más rápido corremos, más volamos.</p>
+          <br />
+          <p class="texto">El nuevo Nike Air Zoom Pegasus 35 está aquí.</p>
+        </div>
+        <div class="botones">
+          <div>
+            <a class="btn_negro" href="#">COMPRAR PARA HOMBRE</a>
+          </div>
+          <div>
+            <a class="btn_negro" href="#">COMPRAR PARA MUJER</a>
+          </div>
+        </div>
+      </section>
+      <br />
+      <section class="temporada ancho">
+        <div class="banner_temp">
+          <div class="info">
+            <h1 class="titulo">PARA TODA LA TEMPORADA</h1>
+            <p class="texto">
+              Sigue entrenando, jugando y divirtiendote con los estilos de
+              nuestro último look.
+            </p>
+          </div>
+          <div class="botones">
+            <div class="btn_blanco">
+              <a href="#">COMPRAR PARA HOMBRE</a>
+            </div>
+            <div class="btn_blanco">
+              <a href="#">COMPRAR PARA MUJER</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer ancho">
+      <div class="footer-links footer_a">
+        <p class="texto">TIENDAS MÁS CERCANAS</p>
+        <p class="texto">ÚNETE A NIKE+</p>
+        <p class="texto">COMENTARIOS SOBRE EL SITIO</p>
       </div>
-      <div class="info_creelo centrar">
-        <h1>CRÉELO</h1>
-        <p>Obtén el look de la selección nacional del calzado hacia arriba.</p>
-        <a class="btn_negro" href="#">Compra ahora</a>
-      </div>
-    </section>
-
-    <section class="seccion_volar ancho margen">
-
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-links ancho margen">
-      <p>TIENDAS MÁS CERCANAS</p>
-      <p>ÚNETE A NIKE</p>
-      <p>COMENTARIOS SOBRE EL SITIO</p>
-    </div>
-  </footer>
-
-
-</body>
+    </footer>
+  </body>
 </html>
